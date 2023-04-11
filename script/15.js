@@ -48,10 +48,13 @@ document.addEventListener("DOMContentLoaded", () => { //이번엔 버튼 눌릴�
 
     for(let item of bts) {          
 
-        <ul>이걸 안에 우찌 집어넣냐~</ul>
-    let apple=`<li>${item.textContent}</li>`
+        // <ul>안에 넣는법 뭘까용~?</ul>
 
-    document.querySelectorAll("#hoho").innerHTML = +apple?
+    let apple = 
+    
+    `<li>${item.textContent}</li>`
+
+    document.querySelector("#hoho").innerHTML = apple
 
 
     // ul 안에 li 로 4개 반복.

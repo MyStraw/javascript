@@ -41,10 +41,16 @@ document.addEventListener("DOMContentLoaded", () => { //이번엔 버튼 눌릴�
     //case4 
     //for of
     
-    for(let item of bts) {
-        console.log(item.textContent);
-    }
+    // for(let item of bts) {
+    //     console.log(item.textContent); 콘솔창에 띄우셈
+    // }
 
+
+    for(let item of bts) {          
+        
+        `<li>${item.textContent}</li>`;
+
+    document.querySelectorAll("#hoho").innerHTML = 
 
 
     // ul 안에 li 로 4개 반복.
@@ -64,4 +70,4 @@ document.addEventListener("DOMContentLoaded", () => { //이번엔 버튼 눌릴�
 
 
 
-});
+}});

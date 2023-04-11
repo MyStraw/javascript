@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--디바이스 크기에 맞춰서 하겠다-->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <!-- 외부스크립트 가져오기 -->
-    
+    <!-- 외부스크립트 가져오기. pico css CDN -->
+    <script src="./13.js"></script>
 
-    </script>
     <title>K-digital 3기</title>
     <!-- 자바스크립트 위치1 -->
     <!-- <script> 이 안에 자바스크립트 코드 작성-->
@@ -26,15 +26,15 @@
     <main class="container">
         <article>
             <header>
-                <h1>자바스크립트</h1></header>
-                <h2 id="h2Id" class="h2Class"></h2> <!-- alert를 여기에 넣을라면?-->
+                <h1>자바스크립트</h1>
+            </header>
+            <h2 id="h2Id" class="h2Class"></h2> <!-- alert를 여기에 넣을라면?-->
+            <footer>                
+                <form action="a.html"> <!--액션이 없으면 자기페이지로 다시 돌아간다. 안녕하세요 하고 아코디언이 닫히는 이유가 닫히는게 아니라 원래 자기페이지로 돌아가서 그럼. 이걸 js에서 event.prevent-->
+                    <button onclick="show();">눌러주세요.</button> <!--이거 눌리며녀 alert 뜨게끔 하고싶다. --> <!--클릭 하면 alert 할때. 전통적인 onclick-->
+                </form>
+            </footer>
 
-                <footer>
-                    <form>
-                        <button onclick="show()">눌러주세요</button> <!--이거 눌리며녀 alert 뜨게끔 하고싶다. --> <!--클릭 하면 alert 할때.-->
-                    </form>
-                </footer>
-            
         </article>
     </main>
     <!-- 자바스크립트 위치3 -->
@@ -44,7 +44,7 @@
             alert("안녕하세요."); 
         }
     </script> -->
-    <script src="./13.js"></script> <!--자바 스크립트 파일따로.위에 하니까 피코랑 충돌나서 아래로 옮김-->
+     <!--자바 스크립트 파일따로.위에 하니까 피코랑 충돌나서 아래로 옮김-->
 </body>
 
 </html>

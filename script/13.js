@@ -11,7 +11,7 @@
 
 const show = () => {//컨스트. 변경되지 않는다는 뜻. 함수명을 변수처럼 쓴다. 펑션이란 글자 없이. 위에 function shot() 형식말고 이것처럼 쓸수있다.
     event.preventDefault();
-    document.getElementById("h2Id").innerHTML= "<img src='../img/1.png'>"; // 따옴표 주의! "안녕하세요" 들어가듯이 큰따옴표 안에 넣으셈.
+    document.getElementById("h2Id").innerHTML= "<img src='../img/1.png'>"; // 따옴표 주의! 원래 "안녕하세요" 넣듯이  큰따옴표 안에 넣으셈. 대신 따옴표는 안겹치게.
 }
 
 // document.addEventListener("DOMContentLoaded", function () { //얘도 화살표 바꿀수 있다.

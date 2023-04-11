@@ -45,13 +45,12 @@ document.addEventListener("DOMContentLoaded", () => { //이번엔 버튼 눌릴�
         console.log(item.textContent);
     }
 
+
+
     // ul 안에 li 로 4개 반복.
     // 안에 내용은 빽틱으로.
 
 
-
-
-    document.querySelectorAll('button').innerHTML = 
 
     
     // for(let [k,v] of bts.entries()) {

@@ -47,10 +47,11 @@ document.addEventListener("DOMContentLoaded", () => { //이번엔 버튼 눌릴�
 
 
     for(let item of bts) {          
-        
-        `<li>${item.textContent}</li>`;
 
-    document.querySelectorAll("#hoho").innerHTML = 
+        <ul>이걸 안에 우찌 집어넣냐~</ul>
+    let apple=`<li>${item.textContent}</li>`
+
+    document.querySelectorAll("#hoho").innerHTML = +apple?
 
 
     // ul 안에 li 로 4개 반복.

@@ -39,6 +39,6 @@ const show = () => {
 
 
     //결과출력
-    document.querySelector(".h2Class").innerHTML = `<img src='../img/${n}.png'>`;
+    document.querySelector(".h2Class").innerHTML = `<img src='./img/${n}.png'>`;
 }
 

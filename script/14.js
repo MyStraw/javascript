@@ -6,7 +6,7 @@ const show = () => {
 
     let n = Math.floor(Math.random() * 6) + 1; //1부터 5.xxx 다 버리고 1 더하기
 
-    document.querySelector(".h2Class > img").setAttribute("src", `../img/${n}.png`)
+    document.querySelector(".h2Class > img").setAttribute("src", `./img/${n}.png`)
 
 }
 

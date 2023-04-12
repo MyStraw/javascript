@@ -41,6 +41,6 @@ const show = () => {
 
 
     //결과출력
-    document.querySelector(".h2Class" ).innerHTML= `<img src='../img/${n}.png'>`; //innerHTML은 h2Class html안에꺼 다 갖고와.
+    document.querySelector(".h2Class" ).innerHTML= `<img src='./img/${n}.png'>`; //innerHTML은 h2Class html안에꺼 다 갖고와.
 }
 

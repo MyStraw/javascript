@@ -22,7 +22,7 @@ const show = () => {//컨스트. 변경되지 않는다는 뜻. 함수명을 변
 
     //case 5 파이썬의 fstring과 유사
 
-    document.getElementById("h2Id").innerHTML = `<img src='../img/${n}.png'>`; //문자열 안에서 변수를 쓰고싶을때. 1을 변수로 바꾸고싶다! 할때. 빽틱(`) 문자열로 따옴표대신 감싼다.
+    document.getElementById("h2Id").innerHTML = `<img src='./img/${n}.png'>`; //문자열 안에서 변수를 쓰고싶을때. 1을 변수로 바꾸고싶다! 할때. 빽틱(`) 문자열로 따옴표대신 감싼다.
     //빽틱이 되고나면 변수를 집어넣고싶다. 변수를 중괄호로 싼다. 파이썬은 n까지만 하면 되는데 파이썬은 $ 넣어야돼
 
     //set attribute를 이용해 속성을 바꾸기로 하면 안되나/
@@ -60,7 +60,7 @@ const show = () => {//컨스트. 변경되지 않는다는 뜻. 함수명을 변
 
 
 
-    document.getElementById("h2Id").innerHTML = "<img src='../img/" + n + ".png'>";// 따옴표 주의! 원래 "안녕하세요" 넣듯이  큰따옴표 안에 넣으셈. 대신 따옴표는 안겹치게.
+    document.getElementById("h2Id").innerHTML = "<img src='./img/" + n + ".png'>";// 따옴표 주의! 원래 "안녕하세요" 넣듯이  큰따옴표 안에 넣으셈. 대신 따옴표는 안겹치게.
     //n만 바뀌면 되니까. n만 글자로 인식시켜
     //가운데로 위치 시키고 싶으면? css-> 이미지는 인라인. 텍스트 얼라인 써도 된다.
 }

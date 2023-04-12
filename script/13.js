@@ -1,4 +1,4 @@
-// document.getElementById("h2Id").innerHTML = "시작입니다"; //맨위에 하면 오류난다.
+// document.getElementById("h2Id").innerHTML = "시작입니다"; //맨위에 하면 오류난다.함수안에 들어가있어야지.
 
 // function show() {
 //     // alert("안녕하세요.");     

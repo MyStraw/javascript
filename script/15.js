@@ -39,23 +39,23 @@ document.addEventListener("DOMContentLoaded", () => { //이번엔 버튼 눌릴�
 
 
     //case4 
-    //for of
+    // //for of
     
-    // for(let item of bts) {
-    //     console.log(item.textContent); 콘솔창에 띄우셈
-    // }
+    for(let item of bts) {
+    console.log(item.textContent);
+    }
 
+///////////////////////////////////////////////////////////////////////////////
+    // for(let item of bts) {          
 
-    for(let item of bts) {          
+    //     // <ul>안에 넣는법 뭘까용~?</ul>
 
-        // <ul>안에 넣는법 뭘까용~?</ul>
-
-    let apple = 
+    // let apple = 
     
-    `<li>${item.textContent}</li>`
+    // `<li>${item.textContent}</li>`
 
-    document.querySelector("#hoho").innerHTML = apple
-
+    // document.querySelector("#hoho").innerHTML = apple
+///////////////////////////////////////////////////////////////////////////////
 
     // ul 안에 li 로 4개 반복.
     // 안에 내용은 빽틱으로.
@@ -67,11 +67,5 @@ document.addEventListener("DOMContentLoaded", () => { //이번엔 버튼 눌릴�
     //     console.log(k, v.textContent);
     // }
 
-    
 
-    
-
-
-
-
-}});
+});

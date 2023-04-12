@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="../styles/16.css">
+
+
+    <script src="./16.js"></script>
+
+    <title>K-digital 3기</title>
+
+</head>
+
+<body>
+
+    <main class="container">
+        <article>
+            <header>
+                <h1>주사위게임</h1>
+                <div id="hdiv"></div>
+            </header>
+            <h2 id="h2Id" class="h2Class"></h2>
+            <footer>
+                <form>
+                    <fieldset>
+                        <legend>
+                            <h2>숫자선택</h2>
+                        </legend>
+                        <div class="grid">
+                            <label for="small">
+                                <input type="radio" id="r1" name="num" value="1">1
+                            </label>
+                            <label for="small">
+                                <input type="radio" id="r2" name="num" value="2">2
+                            </label>
+                            <label for="small">
+                                <input type="radio" id="r3" name="num" value="3">3
+                            </label>
+                            <label for="small">
+                                <input type="radio" id="r4" name="num" value="4">4
+
+                            </label>
+                            <label for="small">
+                                <input type="radio" id="r5" name="num" value="5">5
+
+                            </label>
+                            <label for="small">
+                                <input type="radio" id="r6" name="num" value="6">6
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="grid">
+                        <button onclick="show();">확인</button>
+                        <button type="reset">취소</button>
+                    </div>
+
+                </form>
+            </footer>
+
+        </article>
+    </main>
+
+</body>
+
+</html>

@@ -2,7 +2,7 @@ const show = () => {
     event.preventDefault();  //재 렌더링 안되게
 
     let n = Math.floor(Math.random() * 6) + 1;
-
+    console.log(n);
 
     //사용자 입력 수 : 라디오의 체크값을 찾음 ->"radio" 찾아야된다. 클래스 걸어서 찾아올수도 있고
 
@@ -21,7 +21,14 @@ const show = () => {
     }
 
 
-    if (n == user) {
+    // if (n == user) {
+    //     document.querySelector('article h1').textContent = '주사위게임 : 맞음(승)'
+    // }
+    // else {
+    //     document.querySelector('article h1').textContent = '주사위게임 : 틀림(패)'
+    // }
+
+    if (n === parseInt(user)) { //===은 타입까지 같아야 하니까 user를 Int로 바꿔야 한다. 문자열을 숫자로 바꾸기 => parseInt
         document.querySelector('article h1').textContent = '주사위게임 : 맞음(승)'
     }
     else {

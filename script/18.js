@@ -1,13 +1,40 @@
 //회문 체크 함수
-const palindrome = ()=>{
+const palindrome = (t1, t2)=>{
     console.log('palindrome') ;
+
+    let s = t1.value;
+    console.log('s')
+    //입력내용이 없는 경우
+    if (s.length == 0){ //문자열 입력이 0이다. 즉 메세지 입력이 안됐다. 입력안되면 클릭해도 안되게 리턴.
+        document.querySelector("h2").textContent = '단어를 입력하세요';
+        return; 
+    } ;
+
+    //입력내용이 있는 경우 else 쓸필요 없다.
+    //첫번째 방법. 우영우 뒤에서부터 0,1,2 2,1,0 으로 뒤집어
+    let rs =''; //reverse s //s는 정방향 글자. 
+    for(let i = s.length -1; i>=0 ; i--){
+        rs = rs+ s[i]; 
+    }
+    console.log("s=",s, "rs=", rs); //자기이름 넣고 콘솔로 확인해봥
+
+    if(s==rs){
+        t2.value = "회문입니다."; //인폿타입 텍스트이기 때문에 value로 찍어야 된다.
+        document.querySelector("h2").textContent = '오홍~회문이구려~'; //출력할때도 걍 이거 쓴다. 어디에 출력할지만 ()안에 표시해줭
+        
+    }
+    else{
+        t2.balue = "회문이 아닙니다.";
+        document.querySelector("h2").textContent = '엫헿~회문이 아니네';
+
+    }
 
 
 
 };
 
 //숫자 합계
-const numSum = () => {
+const numSum = (t1, t2) => {
     console.log('numSum') ;
 
 };
@@ -20,8 +47,9 @@ document.addEventListener("DOMContentLoaded", () => { //버튼 클릭이벤트�
     //DOM요소 가져오기
 
     const txt1 = document.querySelector("#txt1");
-    const txt2 = document.querySelector("#txt2");
+    const txt2 = document.querySelector("#txt2"); 
 
+    //const txts = document.querySelectorAll('input[type=txt]') 인풋타입 텍스트만 가져오겠다. csc 할때도 할수있다
     //클릭이벤트 한방에해보자. 버튼으로 갖고오면 취소까지 갖고오니까 2개만 갖고올라고 클래스로 갖고오자
 
     const bts = document.querySelectorAll(".bt"); //집어오는 역할. All은 배열.
@@ -38,10 +66,15 @@ document.addEventListener("DOMContentLoaded", () => { //버튼 클릭이벤트�
         event.preventDefault(); //로그 보니까 클릭 할때마다 리셋된당. 이거 넣어서 리셋 막아줘. 이벤트리스너에 넣어도 된다 이건. 그리고 위에 괄호에 이벤트 넣어줘.
         //let gubun = bt.innerHTML;     // 이너 html을 가져왔다. 있는거 갖고올때도 쓴다.
         let gubun = bt.getAttribute('id').slice(-1); // 마우스 가져다 대면 뭘 선택하고 있는지 색깔이 바뀐다. id. 맨 마지막꺼 잘라낼거야slice(-1). 콘솔에 1,2 표시된다. bt1 => 0,1,2 인덱스 순서. g.length -1 자바는 이런데 js는 이걸쓴다
-        if (gubun === '1') palindrome(); //=== 데이터 타입까지 봐야한다. ==1 해도되고, ==='1'로 문자열로. 슬라이스로 뗀거=문자열. 클릭시 역할이 다르니까 부르는게 달라야해. 맨 윗줄 올라가서 함수확인. 콘솔까지만 했다.
+        //어트리뷰트(속성)로->클래스bt인거에서 id 값 땡겨왔고, 슬라이스로 뒷글자만 따오니 bt1에서 1만 따와졌다. innerHTML로 땡겨오면 '회문확인' 으로 땡겨도 된다.텍스트컨텐츠도 가능. 입맛에 맞게.
+        //슬라이스로 안잘랐으면 밑에 gubun==='bt1' 하면된다.
+        if (gubun === '1') palindrome(txt1,txt2); //=== 데이터 타입까지 봐야한다. ==1 해도되고, ==='1'로 문자열로. 슬라이스로 뗀거=문자열. 클릭시 역할이 다르니까 부르는게 달라야해. 맨 윗줄 올라가서 함수확인. 콘솔까지만 했다.
         // console.log(gubun); 이걸로 슬라이스로 숫자 지운거 확인가능. 자바에선 인덱스 0,1,2 순서지만 여기선 2자리가 -1
-        //어트리뷰트로->클래스bt인거에서 id 값 땡겨왔고, 슬라이스로 뒷글자만 따오니 bt1에서 1만 따와졌다. innerHTML로 땡겨오면 '회문확인' 으로 땡겨도 된다.텍스트컨텐츠도 가능. 입맛에 맞게.
         else numSum();
+
+        //txtbox1에 value 갖고오고, 회문인지 아닌지 textbox2에 집어넣어주고. 갖고오는거. 함수 부분이랑 dom 아랫부분 다르다. dom 위쪽은 const txt1 못써. 맨위 함수에 t1, t2로. 안집어내도 된다.
+        //t1에 txt1이 들어가고, t2에 txt2 가 들어갈겨
+        
        
 
       }); 
@@ -51,9 +84,6 @@ document.addEventListener("DOMContentLoaded", () => { //버튼 클릭이벤트�
     }
 
 
-
-
-    //const txts = document.querySelectorAll('input[type=txt]') 인풋타입 텍스트만 가져오겠다. csc 할때도 할수있다
 
 
 

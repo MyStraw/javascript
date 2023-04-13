@@ -114,12 +114,7 @@ document.addEventListener("DOMContentLoaded", () => { //버튼 클릭이벤트�
 
       }); 
 
-
-
     }
-
-
-
 
 
 })

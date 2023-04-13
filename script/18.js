@@ -34,12 +34,12 @@ const palindrome = (t1, t2)=>{
     //결과 확인
     if(t1.value==rs){ //방법2로 하면 이걸로.s를 쪼개고 배열로 했으니 안통한다. 방법1은 s==rs쓰면 됨
         t2.value = "회문입니다."; //인폿타입 텍스트이기 때문에 value로 찍어야 된다. 값 txt2에 낑가 넣을끼라. value=값
-        document.querySelector("h2").textContent = '오홍~회문이구려~'; //출력할때도 걍 이거 쓴다. 어디에 출력할지만 ()안에 표시해줭
+ //       document.querySelector("h2").textContent = '오홍~회문이구려~'; //출력할때도 걍 이거 쓴다. 어디에 출력할지만 ()안에 표시해줭
         
     }
     else{
         t2.value = "회문이 아닙니다.";
-        document.querySelector("h2").textContent = '엫헿~회문이 아니네';
+ //       document.querySelector("h2").textContent = '엫헿~회문이 아니네';
 
     }
 

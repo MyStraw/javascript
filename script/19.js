@@ -129,8 +129,8 @@ document.addEventListener("DOMContentLoaded", () => { //감지되는 이벤트�
             for (let item of arr) {//arr의 아이템 갖고왕~ // item == 는 두개 쓰기. 이벤트 빼먹지 않기. join을 해야 창에 뜬다!, 복붙할때 바꾸기!!!
                 switch (gubun) { //
                     case '사과':
-                        if (item == '🍏') temp.push('🥕');
-                        else temp.push(item);
+                        if (item == '🍏') temp.push('🥕'); //사과면 당근으로 넣고. item은 arr에 들어있는 전부다.
+                        else temp.push(item); //아니면 아이템 다 넣어
                         break;
                     case '바나나':
                         if (item == '🍌') temp.push('🥒');

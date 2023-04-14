@@ -150,14 +150,91 @@ document.addEventListener("DOMContentLoaded", () => { //감지되는 이벤트�
             arr = temp;
             txt1.value = arr.join('');
 
-
-
-
-
         });
 
     }
 
+    //     for (let cbt3 of cbt3s) {
+    //         cbt3.addEventListener('click', (event) => {
+    //             event.preventDefault();
+    //             let gubun = cbt3.textContent.split('->')[0];
+    //             console.log(gubun);
 
 
-})
+    //             let temp = [];
+
+    //             for (let item of arr) {
+    //                 temp = arr.join(',')
+    //                 console.log('temp', temp)
+    //                 switch (gubun) {
+    //                     case '사과': //모지? 삼항연산자. 사과냐? 맞으면 당근.아니면 나머지 넣어
+    //                         arr = arr.map((item) => item != '🍏' ? '🥕' : item);
+    //                         break;
+    //                     case '바나나':
+    //                         arr = arr.map((item) => item != '🍌' ? '🥒' : item);
+    //                         break;
+    //                     case '오렌지':
+    //                         arr = arr.map((item) => item != '🍊' ? '🥑' : item);
+    //                         break;
+    //                     case '수박':
+    //                         arr = arr.map((item) => item != '🍉' ? '🥦' : item);
+    //                         break;
+
+    //                 }
+    //             }
+
+    //             arr = temp;
+    //             txt1.value = arr.join('');
+
+    //         });
+
+    //     }
+
+
+    //     temp = arr.join(',') //배열을 문자열로 바꾸고 문자열에서 replace를 적용한뒤 다시 배열로 돌린다.
+    //     switch (gubun) {
+    //         case '사과':
+    //             temp = temp.replaceAll('🍏', '🥕');
+    //             break;
+    //         case '바나나':
+    //             temp = temp.replaceAll('🍌', '🥒');
+    //             break;
+    //         case '오렌지':
+    //             temp = temp.replaceAll('🍊', '🥑');
+    //             break;
+    //         case '수박':
+    //             temp = temp.replaceAll('🍉', '🥦');
+    //             break;
+
+    //     }
+
+    //     console.log('temp', temp);
+    //     arr = temp.split(',');
+
+    // });
+
+
+
+
+
+
+
+    // arr = temp;
+    // text1.value = arr.join('');
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+});
+
+

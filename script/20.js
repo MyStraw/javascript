@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     // 위에서부터 여기까지 내려오면서, 이젠 boxs안에는 값들이 차있어. cnt가 8까지 왔으니 말이야. 8번 눌렀으니 undefined중 8개는 하트로 가득차있겠지? 그럼 마지막 남은 boxs[6]은 뭘까? 바로 box7 이지. box7은 아직도 비어있는거야.
                     // 뭐가 비어있는지 확인하는 작업이었고, 이젠 발견했으니 그 안을 채워주면 돼.
-                    // 그럼 이 빈 box7을 '<img src="./img/hart-nu.png">' 하트로 채워주면 되겠지? 그럼 8번째를 누름과 동시에 마지막 남은 박스도 하트로 채워지게 되는거지.
+                    // 그럼 이 빈 box7을 '<img src="./img/hart-nu.png">' 하트로 채워주면 되겠지? 그럼 8번째를 누름과 동시에 마지막 남은 박스도 하트로 채워지게 되는거지. 냐하하
 
                     // 2)find 이용
                     // let lastn = arr.findIndex((item)=>item == 1);

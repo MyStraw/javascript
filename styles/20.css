@@ -1,10 +1,10 @@
-.c1{
+.boxrow{
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 
-.d1{
+.box{
     display:flex;
     justify-content: center;
     align-items: center;

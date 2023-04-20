@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 for (let box of boxlist) { //콘솔 보면서 해.                
                     console.log(box.rank, box.movieNm, box.salesAmt, box.rankInten)
                     boxTag = boxTag + '<details>'; //태그를 문자열로 모아. html에 주석 해놓은 부분.
-                    boxTag = boxTag + `<summary role="button" class="contrast">${box.movieNm}</summary>`; //빽틱으로 안에 문자열 부분에서 바꿀부분 설정. 천단위 콤마 할라믄 일단 문자를 숫자로 바꿔야. parse로 바꾸고 to~로 천단위.
+                    boxTag = boxTag + `<summary role="button" class="contrast">${box.rank}위- ${box.movieNm}</summary>`; //빽틱으로 안에 문자열 부분에서 바꿀부분 설정. 천단위 콤마 할라믄 일단 문자를 숫자로 바꿔야. parse로 바꾸고 to~로 천단위.
                     boxTag = boxTag + '<ul>';
                     boxTag = boxTag + `<li>순위 : ${box.rank}</li>`;
-                    boxTag = boxTag + `<li>매출액 : ${parseInt(box.salesAmt).toLocaleString()}</li>`;
+                    boxTag = boxTag + `<li>매출액 : ${parseInt(box.salesAmt).toLocaleString()}원</li>`;
                     boxTag = boxTag + `<li>전일대비순위 : ${box.rankInten}</li>`;
                     boxTag = boxTag + '</ul>';
                     boxTag = boxTag + '</details>';
